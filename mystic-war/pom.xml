@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>my.com.myriadeas</groupId>
+		<artifactId>mystic-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../mystic-parent</relativePath>
+	</parent>
+	<artifactId>mystic-war</artifactId>
+	<packaging>war</packaging>
+	<name>mystic-war</name>
+	<dependencies>
+		<dependency>
+			<groupId>my.com.myriadeas</groupId>
+			<artifactId>mystic-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>geronimo-servlet_2.5_spec</artifactId>
+					<groupId>org.apache.geronimo.specs</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>geronimo-servlet_3.0_spec</artifactId>
+					<groupId>org.apache.geronimo.specs</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>
