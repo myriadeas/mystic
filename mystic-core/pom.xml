@@ -17,6 +17,11 @@
 	<name>mystic-core</name>
 	
 	<dependencies>
+	
+	<dependency>
+			<groupId>my.com.myriadeas</groupId>
+			<artifactId>mystic-test</artifactId>
+		</dependency> 
   
     <dependency>
 			<groupId>com.googlecode.json-simple</groupId>
