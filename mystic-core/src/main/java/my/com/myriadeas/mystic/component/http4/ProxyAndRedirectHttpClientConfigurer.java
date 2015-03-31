@@ -75,43 +75,7 @@ public class ProxyAndRedirectHttpClientConfigurer implements HttpClientConfigure
 		    }
 	    });
 		
-		/*
-		X509TrustManager tm = new X509TrustManager() {
-
-            public java.security.cert.X509Certificate[] getAcceptedIssuers(){
-                return null;
-            }
-
-            @Override
-            public void checkClientTrusted(
-                    java.security.cert.X509Certificate[] arg0, String arg1)
-                    throws java.security.cert.CertificateException {
-
-            }
-
-            @Override
-            public void checkServerTrusted(
-                    java.security.cert.X509Certificate[] arg0, String arg1)
-                    throws java.security.cert.CertificateException {
-
-            }
-        };
-        try {
-            SSLContext ctx = SSLContext.getInstance("SSL");
-            ctx.init(null, new TrustManager[] { tm }, null);
-
-            SSLSocketFactory ssf = new SSLSocketFactory(ctx,
-                    SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-            ClientConnectionManager ccm = httpClient.getConnectionManager();
-            SchemeRegistry sr = ccm.getSchemeRegistry();
-            sr.register(new Scheme("https4", 443, ssf));
-
-        } catch (NoSuchAlgorithmException e) {
-            //logger.error(e);
-        } catch (KeyManagementException e) {
-            //logger.error(e);
-        } 
-        */
+		
 	}
     
     private void registerScheme(org.apache.http.conn.scheme.SchemeRegistry schemeRegistry) {
