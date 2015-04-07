@@ -21,6 +21,7 @@
 	<dependency>
 			<groupId>my.com.myriadeas</groupId>
 			<artifactId>mystic-test</artifactId>
+      <scope>test</scope>
 		</dependency> 
   
     <dependency>
